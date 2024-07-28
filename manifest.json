@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Fecha y Hora By Andres Ramirez",
+    "version": "1.0",
+    "description": "Una extensión que muestra la fecha y hora actuales en la pantalla.",
+    "permissions": ["activeTab", "storage"],
+    "action": {
+      "default_popup": "popup/popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content/content.js"],
+        "css": ["content/content.css"]
+      }
+    ]
+  }
+  
